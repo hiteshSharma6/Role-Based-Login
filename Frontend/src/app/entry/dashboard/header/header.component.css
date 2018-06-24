@@ -1,0 +1,280 @@
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+#header {
+  padding: 2px;
+  background-color: #fff;
+/*  box-shadow: 0px 0px 5px 1px grey;*/
+  border-bottom: 1px solid #17a2b8;
+}
+
+nav li img {
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.nav-item {
+  padding: 0px 10px;
+  margin: auto;
+  line-height: 0;
+  border-right: 1px solid #9bf0f2;
+}
+
+.list-item {
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: #60dcff;
+  border-radius: 5px;
+}
+
+.nav-item:last-child {
+  margin: auto 15px;
+  border-right: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.nav-item:last-child:hover {
+  background-color: ;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
+.list-name {
+  float: right;
+  font-size: 10px;
+  line-height: 14px;
+  padding: 4px 2px;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0.5px;
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.list-item:hover .list-name {
+  color: darkblue;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px white;
+}
+
+#user .fullname {
+  padding: 10px;
+  font-size: 11px;
+  position: relative;
+  padding-right: 15px;
+}
+
+#user .arrow {
+  border: solid darkcyan;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-left: 6px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  margin-top: 2px;
+  right: 3px;
+  top: 30%;
+}
+
+#user:hover .arrow {
+  transform: rotate(45deg);
+  transition-timing-function: ease-in-out;
+  margin-top: 0px;
+  right: 0px;
+}
+/*
+
+.nav-btn {
+  padding: 15px !important;
+  text-transform: uppercase;
+  background-color: rgba(29, 247, 196, 0.8);
+  text-shadow: 0px 0px 10px rgba(65, 219, 91,1);
+  color: rgba(255,255,255,0.7) !important;
+  box-shadow: 0px 0px 5px 1px rgba(34, 226, 172,1);
+  border-radius: 2px;
+}
+*/
+
+.nav-btn:hover {
+  background-color: rgba(29, 247, 196, 0.1);
+  border-radius: 5px;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 33px;
+  width: 100%;
+  left: 0px;
+  height: 0;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+
+#user:hover .user-dropdown {
+  height: 123px;
+}
+
+.user-dropdown ul {
+background-color: rgba(0, 0, 0, 0.7);
+margin-top: 3px;
+}
+
+.user-dropdown li {
+cursor: pointer;
+}
+
+.user-dropdown li:hover {
+background-color: #2cdcf7;
+}
+
+.user-list {
+  padding: 15px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0px 0px 5px rgba(12,206,35,0.8);
+  text-align: center;
+}
+/*
+
+a {
+text-decoration: none;
+color: #1ab188;
+transition: .5s ease;
+}
+a:hover {
+color: #179b77;
+}
+*/
+
+.button {
+border: 0;
+outline: none;
+border-radius: 0;
+padding: 5px 0;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: .05em;
+  background: #1ab188;
+transition: all 0.5s ease;
+-webkit-appearance: none;
+cursor: pointer;
+color: #ffffff;
+}
+
+.button-login {
+ background-color: rgba(29, 247, 196, 1);
+ 
+}
+
+.button-login:hover, .button-login:focus {
+ background-color: rgba(29, 247, 196, 0.8);
+ box-shadow: 0px 0px 1px 0px rgba(65, 219, 91,1);
+}
+
+.button-submit {
+background-color: #1aed63;
+}
+
+.button-submit:hover, .button-submit:focus {
+background: #1dc650;
+}
+
+.button-cancel {
+background-color: #ef3e4d;
+}
+
+.button-cancel:hover, .button-cancel:focus {
+background: #DC3545;
+}
+
+.button-block {
+display: block;
+width: 48%;
+}
+
+.forgot {
+margin-top: -20px;
+text-align: right;
+}
+
+/*-------------MAIN-----------------*/
+
+.secondary-nav {
+/*  background-color: lightcyan;*/
+  padding-bottom: 15px;
+  z-index: 1000;
+}
+
+.col {
+  padding: 0px;
+}
+
+/*-------------SIDEBAR--------------*/
+
+#brand-logo {
+  width: 100%; 
+  padding: 40px 1.5vw;
+  border-bottom: 1px solid #1c7b9d;
+}
+
+.side-nav {
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 0;
+/*  border-right: 2px solid lightgrey;*/
+  background-color: #249AC5;
+}
+
+.side-list img {
+  width: 22px;
+  margin-right: 5px;
+}
+
+.side-list {
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+/*  font-family: 'Calibiri', serif, monospace;*/
+}
+
+.side-list:hover {
+  background-color: #1c7b9d;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/*-----------------TABLE---------------*/
+table li {
+  float: left;
+  margin: 0.5vw;
+}
+
+.input-group input {
+  border: 1px solid #17a2b8;
+}

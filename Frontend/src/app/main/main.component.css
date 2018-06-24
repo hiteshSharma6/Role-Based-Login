@@ -1,0 +1,11 @@
+.bck-img {
+    background-image: url(/assets/images/main2-wall-2.png);
+    position: absolute;
+    width: 100%;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  

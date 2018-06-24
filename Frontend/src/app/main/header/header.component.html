@@ -1,0 +1,122 @@
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+<!-- <link rel="stylesheet" href="./header.component.css"> -->
+
+<!--
+    <div style="opacity: 0.5; ">
+      <div class="bck-img"></div>
+    </div>
+-->
+  <nav id="header" class="navbar navbar-expand-md navbar-dark bg-dark nav-bar-padding fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/imageedit_13_6694010660.png" width="130" height="130" class="d-inline-block align-top" alt="LOGO"
+          style="border-radius: 50%; position: absolute; margin-left: 25px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="mynav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="navbar-item nav-item bkg-glow">
+            <a href="" title="Settings">
+              <img src="../../assets/images/settings.png" />
+              <span class="list-name">Settings</span>
+            </a>
+          </li>
+
+          <li class="navbar-item nav-item bkg-glow ">
+            <a href="" title="Notification">
+              <img src="../../assets/images/notification.png" />
+              <span class="list-name">Notifications</span>
+            </a>
+          </li>
+
+          <li id="user" class="navbar-item nav-item" style="padding-left: 10px; padding-right: 20px; position: relative;">
+            <a href="" title={{username}}>
+              <img src="../../assets/images/man.png" style="width: 30px; margin-top: 2px" />
+              <span class="list-name fullname">First Second
+                <i class="arrow"></i>
+              </span>
+            </a>
+            <div class="user-dropdown">
+              <ul style="text-decoration: none; list-style: none; padding: 0px;">
+                <li class="user-list">Profile</li>
+                <li class="user-list">Account</li>
+                <li class="user-list">Requests</li>
+                <li class="user-list">Blacklist</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="navbar-item nav-item" style="border-right: none;">
+            <a href="" title="Logout">
+              <img src="../../assets/images/exit.png" />
+            </a>
+          </li>
+
+          <li class="navbar-item nav-item" style=" border-right: none; cursor: pointer; margin: auto 10px;">
+            <a routerLink="/login" class="nav-link nav-btn" title="Login" data-toggle="modal" data-target="#loginModal">Login</a>
+          </li>
+
+          <li class="navbar-item nav-item" style=" cursor: pointer; margin: auto 10px;">
+            <a routerLink="/register" class="nav-link nav-btn" title="Register" data-toggle="modal" data-target="#registerModal">Register</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+    style="border-radius: 10px;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="background-color: rgba(255,255,255,0);">
+        <div class="modal-body" style="padding: 0;">
+          <div class="form">
+            <div class="tab-content">
+
+              <app-login></app-login>
+
+            </div>
+            <!-- tab-content -->
+
+          </div>
+          <!-- /form -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+    style="border-radius: 10px;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="background-color: rgba(255,255,255,0);">
+        <div class="modal-body" style="padding: 0;">
+          <div class="form">
+            <div class="tab-content">
+
+              <app-register></app-register>
+
+            </div>
+            <!-- tab-content -->
+
+          </div>
+          <!-- /form -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+
+<!-- <script src="script.js"></script> -->

@@ -1,0 +1,44 @@
+.help-block {
+  width:200px;
+  color:white;
+  background-color:gray;
+}
+
+.but {
+  background-color: #29985D;
+  border: 0;
+  padding: 5 80;
+  cursor: pointer;
+}
+
+.reg {
+  /*margin-top: auto;
+       margin-left: auto;
+       margin-right: auto;*/
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  float: right;
+  background-color: white;
+  text-align: center;
+  /*line-height: 10;
+       box-sizing: border-box;
+       font-weight: 100;*/
+  font-family: 'Helvetica Neue', 'Open Sans Pro', 'Arial', sans-serif;
+}
+
+.email {
+  padding: 10 10;
+  width: 100%;
+}
+
+.pass {
+  padding-left: 10px;
+  width: 97%;
+}
+
+.submit {
+  padding: 10 10;
+}

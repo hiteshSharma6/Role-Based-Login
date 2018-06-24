@@ -1,0 +1,76 @@
+.big-img {
+  position: fixed;
+  top: -260px;
+  opacity: 0.5;
+  z-index: -1;
+  right: -554px;
+}
+
+main {
+  color: #ffffff;
+}
+
+main .company {
+  margin-top: 150px;
+  margin-left: 10rem;
+}
+
+main h1 {
+  text-transform: uppercase;
+  font-family: 'Allan';
+  float: left;
+  font-size: 120px;
+  /*  text-shadow: 0px 0px 30px;*/
+  /*  width: 250px;*/
+}
+
+main h2 {
+  text-transform: uppercase;
+  font-family: 'Allerta Stencil';
+  font-style: italic;
+  font-size: 70px;
+  text-shadow: 10px 0px 100px;
+}
+
+main h3 {
+  font-weight: 800;
+  font-size: 30px;
+  font-family: 'Gruppo', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-top: 10px;
+}
+
+.get-started h4 {
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #16a7cc;
+  text-shadow: 0px 0px 1px #19aed3, 0px 0px 6px #18b7db, 0px 0px 12px #17c1e8, 0px 0px 25px #1cc6ed, 0px 0px 50px #2ad3f9, 0px 0px 100px #2cf3f9;
+  /*  0px 0px 70px #00CCFF;*/
+  margin-top: 100px;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-family: 'Gruppo';
+  transform: rotate(-5deg);
+}
+
+main .connect {
+  margin-left: 550px;
+  margin-top: 110px;
+}
+
+main .connect a {
+  text-decoration: none;
+  font-size: 22px;
+  background-color: #09c6e8;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+main .connect a:hover {
+  background-color: #19aed3
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./header.component.css"> </head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 side-nav no-pad">
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation" style="display: none;"> <span class="navbar-toggler-icon"></span> </button>-->
+        <div>
+          <a class="" href="#"> <img id="brand-logo" src="../../../../assets/images/VF-logo-transparent.png" class="d-inline-block align-center" alt="LOGO"> </a>
+          <sidebar class="container">
+           <div>
+             <div class="side-list"><img src="../../../../assets/images/to-do.png" alt="">Tasks</div>
+             <div class="side-list"><img src="../../../../assets/images/review.png" alt="">Comments</div>
+             <div class="side-list"><img src="../../../../assets/images/mail.png" alt="">New Requests</div>
+             <div class="side-list"><img src="../../../../assets/images/email.png" alt="">Pending Requests</div>
+           </div>
+          </sidebar>
+        </div>
+      </div>
+      <div class="col-sm-10 offset-sm-2 no-pad">
+        <nav id="header" class="navbar navbar-expand sticky-top">
+          <div id="mynav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-item nav-item">
+                <div class="list-item">
+                  <a href="" title="Settings"> <img src="../../../../assets/images/settings.png" /> <span class="list-name">Settings</span> </a>
+                </div>
+              </li>
+              <li class="navbar-item nav-item">
+                <div class="list-item">
+                  <a href="" title="Notification"> <img src="../../../../assets/images/notification.png" /> <span class="list-name">Notifications</span> </a>
+                </div>
+              </li>
+              <li id="user" class="navbar-item nav-item" style="position: relative; cursor: pointer;"> <img src="../../../../assets/images/man.png" style="width: 30px; margin-top: 2px" /> <span class="list-name fullname">First Second
+                <i class="arrow"></i>
+              </span>
+                <div class="user-dropdown">
+                  <ul style="text-decoration: none; list-style: none; padding: 0px;">
+                    <li class="user-list">Profile</li>
+                    <li class="user-list">Account</li>
+                    <li class="user-list">Requests</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navbar-item nav-item"> <img src="../../../../assets/images/power-button.png" /> </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="container-fluid sticky-top secondary-nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          <div class="">
+            <ul class="row no-margin">
+              <li class="col-sm-auto"> 
+               <span>Search By: </span>
+                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Created By</a>
+    <a class="dropdown-item" href="#">Company Name</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+              </li>
+               <li class="col" >
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button">Button</button>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </section>
+        <div class="container-fluid">
+          <div class="table-responsive">
+          <table class="table table-hover table-bordered">
+            <thead style="background-color: #49c5ff;">
+              <tr>
+                <th scope="col">S No.</th>
+                <th scope="col">Company Name</th>
+                <th scope="col">Created By</th>
+                <th scope="col">Company Address</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Company 1</td>
+                <td>User {{userid}}</td>
+                <td>Company Address 1</td>
+                <td>
+                  <ul>
+                    <li>
+                      <button type="button" class="btn btn-outline-warning">Edit</button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-outline-info">Approve</button>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Company 1</td>
+                <td>User {{userid}}</td>
+                <td>Company Address 1</td>
+                <td>
+                  <ul>
+                    <li>
+                      <button type="button" class="btn btn-outline-warning">Edit</button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-outline-info">Approve</button>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Company 1</td>
+                <td>User {{userid}}</td>
+                <td>Company Address 1</td>
+                <td>
+                  <ul>
+                    <li>
+                      <button type="button" class="btn btn-outline-warning">Edit</button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-outline-info">Approve</button>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+            <thead style="background-color: #b3f9e8;">
+              <tr>
+                <th scope="col">S No.</th>
+                <th scope="col">Company Name</th>
+                <th scope="col">Created By</th>
+                <th scope="col">Company Address</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  
+   <nav id="header" class="navbar navbar-expand-sm sticky-top">
+<a class="navbar-brand" href="#">
+        <img src="../../../../assets/images/VF-logoo.jpg" width="200" class="d-inline-block align-top" alt="LOGO"
+          style="position: absolute;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="mynav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="navbar-item nav-item">
+            <div class="list-item">
+              <a href="" title="Settings">
+              <img src="../../../../assets/images/settings.png" />
+              <span class="list-name">Settings</span>
+            </a>
+            </div>
+          </li>
+
+          <li class="navbar-item nav-item">
+            <div class="list-item">
+              <a href="" title="Notification">
+              <img src="../../../../assets/images/notification.png" />
+              <span class="list-name">Notifications</span>
+            </a>
+            </div>
+          </li>
+
+          <li id="user" class="navbar-item nav-item" style="position: relative; cursor: pointer;">
+              <img src="../../../../assets/images/man.png" style="width: 30px; margin-top: 2px" />
+              <span class="list-name fullname">First Second
+                <i class="arrow"></i>
+              </span>
+            <div class="user-dropdown">
+              <ul style="text-decoration: none; list-style: none; padding: 0px;">
+                <li class="user-list">Profile</li>
+                <li class="user-list">Account</li>
+                <li class="user-list">Requests</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="navbar-item nav-item">
+              <img src="../../../../assets/images/power-button.png" />
+          </li>
+
+        </ul>
+
+      </div>
+
+  </nav>
+  
+  <section>
+    <nav id="header" class="navbar navbar-expand-sm" style="padding: 20px;">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="mynav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon">@</div>
+    </div>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+          </li>
+          <li>
+            <span>Sort By: </span>
+            <ul>
+              <li><a href="">Company Name</a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+  </nav>
+  
+  </section>
+  
+  <main>
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 col">
+      <sidebar>
+        <ul>
+        <li><a href="">Option 1</a></li>
+        <li><a href="">Option 2</a></li>
+        <li><a href="">Option 3</a></li>
+      </ul>
+      </sidebar>
+    </div>
+    
+    <div class="col-sm-10 col">
+      <div>
+        <ul>
+          <li>
+            <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon">@</div>
+    </div>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+          </li>
+          <li>
+            <span>Sort By: </span>
+            <ul>
+              <li><a href="">Company Name</a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+  <thead style="background-color: #69e5c6;">
+    <tr>
+      <th scope="col">S No.</th>
+      <th scope="col">Company Name</th>
+      <th scope="col">Created By</th>
+      <th scope="col">Company Address</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Company 1</td>
+      <td>User {{userid}}</td>
+      <td>Company Address 1</td>
+      <td>
+        <ul>
+          <li><button type="button" class="btn btn-outline-warning">Edit</button></li>
+          <li><button type="button" class="btn btn-outline-danger">Delete</button></li>
+          <li><button type="button" class="btn btn-outline-info">Approve</button></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Company 1</td>
+      <td>User {{userid}}</td>
+      <td>Company Address 1</td>
+      <td>
+        <ul>
+          <li><button type="button" class="btn btn-outline-warning">Edit</button></li>
+          <li><button type="button" class="btn btn-outline-danger">Delete</button></li>
+          <li><button type="button" class="btn btn-outline-info">Approve</button></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Company 1</td>
+      <td>User {{userid}}</td>
+      <td>Company Address 1</td>
+      <td>
+        <ul>
+          <li><button type="button" class="btn btn-outline-warning">Edit</button></li>
+          <li><button type="button" class="btn btn-outline-danger">Delete</button></li>
+          <li><button type="button" class="btn btn-outline-info">Approve</button></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+  <thead style="background-color: #b3f9e8;">
+    <tr>
+      <th scope="col">S No.</th>
+      <th scope="col">Company Name</th>
+      <th scope="col">Created By</th>
+      <th scope="col">Company Address</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+</table>
+    </div>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </main>
+-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!--
+    <div style="opacity: 0.5; ">
+      <div class="bck-img"></div>
+    </div>
+-->

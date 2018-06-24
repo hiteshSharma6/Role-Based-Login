@@ -1,0 +1,73 @@
+<div id="login">
+  <h1>Welcome Back!</h1>
+
+  <form (ngSubmit)="login()" [formGroup]="loginForm">
+
+    <div class="field-wrap">
+      <label>
+        Email Address
+        <span class="req">*</span>
+      </label>
+      <input type="email" name="email" formControlName="username" required autocomplete="off" />
+      <span *ngIf="submitted && f.username.errors" class="help-block">Username is required</span>
+    </div>
+
+    <div class="field-wrap">
+      <label>
+        Password
+        <span class="req">*</span>
+      </label>
+      <input type="password" name="password" formControlName="password" required autocomplete="off" />
+      <span *ngIf="submitted && f.password.errors" class="help-block">Password is required</span>
+    </div>
+
+    <p class="forgot">
+      <a href="#">Forgot Password?</a>
+    </p>
+    <div style="position: relative;">
+      <button class="button-login button button-block" [disabled]="loading">Log In</button>
+      <span style="color: #ffffff; font-family: monospace; float: right; position: absolute; bottom: -4px; right: 0px;">Not a member? Sign up
+        <a href="#">here</a>
+      </span>
+    </div>
+
+    <div *ngIf="error" class="alert alert-error">{{error}}</div>
+    
+  </form>
+
+</div>
+
+<!-- 
+<div class="reg">
+
+  <div class="card-header">
+    <h2>Login</h2>
+  </div>
+
+  <div class="pt-5 px-5 pb-5">
+
+    <form (ngSubmit)="login()" [formGroup]="loginForm">
+
+      <div class="username form-group">
+        <input class="form-control" formControlName="username" type="text" [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+          placeholder="Username" required>
+        <span *ngIf="submitted && f.username.errors" class="help-block">Username is required</span>
+      </div>
+
+      <div class="pass form-group">
+        <input class="form-control" formControlName="password" type="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+          placeholder="Password" required>
+        <span *ngIf="submitted && f.password.errors" class="help-block">Password is required</span>
+      </div>
+
+      <div class="submit">
+        <button [disabled]="loading" class="but btn-lg" type="submit">Login</button>
+      </div>
+
+      <div *ngIf="error" class="alert alert-error">{{error}}</div>
+
+    </form>
+
+  </div>
+
+</div> -->
